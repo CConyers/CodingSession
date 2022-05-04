@@ -1,13 +1,17 @@
 {
-  "type":"module",
+  "type": "module",
   "scripts": {
     "start": "node index.js",
-    "test": "mocha index.test.js --timeout 20000 --exit"
+    "test": "mocha index.test.js --watch --parallel --require ./mocha.setup.js --timeout 20000 --exit"
   },
   "devDependencies": {
     "chai": "^4.3.6",
     "mocha": "^10.0.0",
     "sinon": "^13.0.2",
-    "sinon-chai": "^3.7.0"
+    "sinon-chai": "^3.7.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-exclude": "^2.1.0",
+    "chai-subset": "^1.6.0",
+    "dirty-chai": "^2.0.1"
   }
 }
