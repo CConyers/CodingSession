@@ -1,12 +1,15 @@
 import sinon from 'sinon';
-import chai from 'chai';
-import sinonChai from 'sinon-chai';
-chai.use(sinonChai);
-const expect = chai.expect;
-
-// import {  } from './index.js';
+import * as pizzaFunctions from './index.js';
 
 describe('Tests', () => {
-  it('', () => {
+  let sandbox;
+  beforeEach(() => {
+    sandbox = sinon.createSandbox();
+  });
+  afterEach(() => {
+    sandbox.restore();
+  });
+  it('test', () => {
+    // const result = pizzaFunctions
   });
 });
